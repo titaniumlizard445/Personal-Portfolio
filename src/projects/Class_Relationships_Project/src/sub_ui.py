@@ -1,11 +1,11 @@
 #PS 1st CP2 UI stuff
 
 #get class stuff
-from character_classes import *
+from .character_classes import *
 #get stoobid proofing funcs
-from stupid_proofable import *
+from .stupid_proofable import *
 #get JSON manipulation funcs
-from files.file_management import *
+from .files.file_management import *
 
 
 #character chooser for smaller code size

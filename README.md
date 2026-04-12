@@ -17,6 +17,9 @@ Contains a variety of programming projects that have been created using python
 
 ## Libraries to intall
 - CustomTkinter
+- Faker
+- Matplotlib
+- Pandas
 
 ## Contributors
 - titaniumlizard445

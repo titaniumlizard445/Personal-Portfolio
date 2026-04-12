@@ -1,6 +1,6 @@
 
-from stupid_proofable import *
-from character_classes import *
+from .stupid_proofable import *
+from .character_classes import *
 from faker import Faker
 import random
 

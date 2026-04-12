@@ -1,8 +1,8 @@
 #PS 1st CP2 Insert Game and Character classes here
 
 import random
-from stupid_proofable import *
-from files.file_management import *
+from .stupid_proofable import *
+from .files.file_management import *
 
 #Use agregation for Game to Characters
 class Game:

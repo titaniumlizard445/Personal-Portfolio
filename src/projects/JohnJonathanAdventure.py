@@ -669,132 +669,132 @@ def BastilliaFortuica(pstats,pinventory,weaponstats,weapons,consumables,estats,e
 def TutorialIntroduction():
     print("Here is a brief summary of what you can do in the game: \n \nYou will adventure to 9 different villages, defeating monsters and tyrants along the way. Make sure your inputs are exactly as the instructions have told you to format them. If there is no instructions then just write one of the options.")
 
-
-village_choices = ["W","C","G","KR","B","KG","E","L"]
-village_chosen = ""
-#gameloop
-while True:
-    print(f"Welcome to possibly the greatest text based adventure game you will see today \nIf you care about your score: \nthere are three stats that will be recorded on the scoreboard \n1)Your Time \n2)The Number of Enemies you Defeated \n3)Your Intelligence stat \n \n Now the game can begin \n")
+def start_game():
+    village_choices = ["W","C","G","KR","B","KG","E","L"]
     village_chosen = ""
-    Name = input("What is your name? \nEnter your name here: ").strip().capitalize()
-    end_time = 0.0
-    game_time = 0.0
-    endgame = False
-    player_loss = False
-    village_shops = resetdictionary["Village Shops"]
-    player_stats = resetdictionary["player stats"]
-    player_inventory = ["Chopsticks"]
-    boss_stats = {
-        "Rat Dictator":{
-            "Strength":15,
-            "Health Points":250,
-            "Boss":True
-        },
-        "George":{
-            "Strength":20,
-            "Health Points":300,
-            "Boss":True
-        }
-    }
-    player_win = False
-    #game
+    #gameloop
     while True:
-        print(f"John was a humble woodcutter who lived alone in a weather-beaten log cabin deep in the heart of the vast Greenwood Forest. The nearest village lay fifty miles away—far enough that John could go months without seeing another human soul, which suited him fine.\n \nHe had his trees, his fireplace, and his meals eaten with his trusty pair of chopsticks—a habit picked up from the rare Asian merchants who wandered close enough for trade. His only friend in the world was George—a wandering tinkerer who visited every few months with stories, odd inventions, and a warm smile that John secretly treasured. \n \n The Day Everything Changed One crisp autumn morning, John marched into the woods carrying his well-used axe, ready to split logs for winter. But fate had other plans. A horse's frantic gallop broke the forest silence. A messenger—mud-stained, wide-eyed—rode up and thrust a rolled parchment into John's hands. \n \n “The eight villages to the south have fallen! Invaded by mutant rats—thousands of them! And… and your friend George was taken.”\n \n The messenger fled almost immediately, as if the forest itself were unsafe. John's heart pounded with panic and anger. George—the one person who cared about him—captured by rats? The thought didn't make sense. But before John could process the message, he heard chittering behind him. He spun around. \n \nToo late. A swarm of grotesque, oversized rats leapt from the underbrush, their eyes glowing with eerie green light. They rushed him like a furry tidal wave, squeaking with unnatural coordination. John swung his axe wildly—but they overwhelmed him. He felt tiny claws on his arms, his legs, his shoulders. In seconds they wrenched the axe from his grip and vanished into the forest with it, carrying the iron-headed tool like a trophy. John was left panting, weaponless, and furious (Execept your treasured chopsticks are still there).\n")
-        TutorialIntroduction()
-        endgame == False
+        print(f"Welcome to possibly the greatest text based adventure game you will see today \nIf you care about your score: \nthere are three stats that will be recorded on the scoreboard \n1)Your Time \n2)The Number of Enemies you Defeated \n3)Your Intelligence stat \n \n Now the game can begin \n")
+        village_chosen = ""
+        Name = input("What is your name? \nEnter your name here: ").strip().capitalize()
+        end_time = 0.0
+        game_time = 0.0
+        endgame = False
         player_loss = False
         village_shops = resetdictionary["Village Shops"]
         player_stats = resetdictionary["player stats"]
         player_inventory = ["Chopsticks"]
+        boss_stats = {
+            "Rat Dictator":{
+                "Strength":15,
+                "Health Points":250,
+                "Boss":True
+            },
+            "George":{
+                "Strength":20,
+                "Health Points":300,
+                "Boss":True
+            }
+        }
         player_win = False
-        freed_villages = []
-        start_time = time.time()
-        print(start_time)
-        while not endgame:
-            player_inventory = ["Chopsticks"]
+        #game
+        while True:
+            print(f"John was a humble woodcutter who lived alone in a weather-beaten log cabin deep in the heart of the vast Greenwood Forest. The nearest village lay fifty miles away—far enough that John could go months without seeing another human soul, which suited him fine.\n \nHe had his trees, his fireplace, and his meals eaten with his trusty pair of chopsticks—a habit picked up from the rare Asian merchants who wandered close enough for trade. His only friend in the world was George—a wandering tinkerer who visited every few months with stories, odd inventions, and a warm smile that John secretly treasured. \n \n The Day Everything Changed One crisp autumn morning, John marched into the woods carrying his well-used axe, ready to split logs for winter. But fate had other plans. A horse's frantic gallop broke the forest silence. A messenger—mud-stained, wide-eyed—rode up and thrust a rolled parchment into John's hands. \n \n “The eight villages to the south have fallen! Invaded by mutant rats—thousands of them! And… and your friend George was taken.”\n \n The messenger fled almost immediately, as if the forest itself were unsafe. John's heart pounded with panic and anger. George—the one person who cared about him—captured by rats? The thought didn't make sense. But before John could process the message, he heard chittering behind him. He spun around. \n \nToo late. A swarm of grotesque, oversized rats leapt from the underbrush, their eyes glowing with eerie green light. They rushed him like a furry tidal wave, squeaking with unnatural coordination. John swung his axe wildly—but they overwhelmed him. He felt tiny claws on his arms, his legs, his shoulders. In seconds they wrenched the axe from his grip and vanished into the forest with it, carrying the iron-headed tool like a trophy. John was left panting, weaponless, and furious (Execept your treasured chopsticks are still there).\n")
+            TutorialIntroduction()
+            endgame == False
+            player_loss = False
             village_shops = resetdictionary["Village Shops"]
             player_stats = resetdictionary["player stats"]
-            print(f"\nPlaces to go: John’s House (JH), Wellville (W), Chemisville (C), Gobapdular (G), Kraftville (KR), Bovisad (B), Kingdomsville (KG), Escargot (E), Litteratious (L), Bastillia Fortuica (You cannot enter unless all other villages have been explored) (BF) Help Button, (H)\nChoose a place to explore!")
-            choice = input("Enter Choice here: ").strip().upper()
-            if choice == "JH":
-                player_stats, player_inventory, chest = JohnsHouse(player_stats,player_inventory,chest,Codes,chestlootsystem)
-            elif choice == "BF":
-                if len(freed_villages) == 8:
-                    player_stats, player_inventory, bosses_defeat, enemies_defeat, player_loss, player_win = BastilliaFortuica(player_stats,player_inventory,weaponstats,Weapons,consumables,boss_stats,enemies_defeated,bosses_defeated,chestlootsystem)
-                else:
-                    sure = input("Are You sure you want to enter the Bastille?(The Final Bosses Castle) y/n \n Enter here: ").strip().lower()
-                    if sure == "y":
+            player_inventory = ["Chopsticks"]
+            player_win = False
+            freed_villages = []
+            start_time = time.time()
+            print(start_time)
+            while not endgame:
+                player_inventory = ["Chopsticks"]
+                village_shops = resetdictionary["Village Shops"]
+                player_stats = resetdictionary["player stats"]
+                print(f"\nPlaces to go: John’s House (JH), Wellville (W), Chemisville (C), Gobapdular (G), Kraftville (KR), Bovisad (B), Kingdomsville (KG), Escargot (E), Litteratious (L), Bastillia Fortuica (You cannot enter unless all other villages have been explored) (BF) Help Button, (H)\nChoose a place to explore!")
+                choice = input("Enter Choice here: ").strip().upper()
+                if choice == "JH":
+                    player_stats, player_inventory, chest = JohnsHouse(player_stats,player_inventory,chest,Codes,chestlootsystem)
+                elif choice == "BF":
+                    if len(freed_villages) == 8:
                         player_stats, player_inventory, bosses_defeat, enemies_defeat, player_loss, player_win = BastilliaFortuica(player_stats,player_inventory,weaponstats,Weapons,consumables,boss_stats,enemies_defeated,bosses_defeated,chestlootsystem)
                     else:
-                        print("Good Choice")
-            elif choice in village_choices:
-                if choice == "W":
-                    village_chosen = "Wellville"
-                elif choice == "C":
-                    village_chosen = "Chemisville"
-                elif choice == "G":
-                    village_chosen = "Gobapdular"
-                elif choice == "KR":
-                    village_chosen = "Kraftville"
-                elif choice == "B":
-                    village_chosen = "Bovisad"
-                elif choice == "KG":
-                    village_chosen = "Kingdomsville"
-                elif choice == "E":
-                    village_chosen = "Escargot"
-                elif choice == "L":
-                    village_chosen = "Litteratious"
-                else:
-                    print("Village Error ocurred")
-                player_stats, player_inventory, village_shops, enemies_defeated, player_loss,freed_villages = DefaultVillage(freed_villages,village_shops,village_chosen,player_inventory,player_stats,weaponstats,Weapons,consumables,enemies_defeated,bosses_defeated,chestlootsystem,enemies,enemies_stats)
-            elif choice == "H":
-                    print("\n \nHelp Menu consists of defining stats (DS), combat functions (CF), Shopping (SH), Places (P)")
-                    goodanswer = False
-                    while not goodanswer:
-                        helpchoice = input("Enter Choice here: ").strip().upper()
-                        if helpchoice == "DS" or helpchoice == "CF" or helpchoice == "SH" or helpchoice == "P":
-                            goodanswer = True
+                        sure = input("Are You sure you want to enter the Bastille?(The Final Bosses Castle) y/n \n Enter here: ").strip().lower()
+                        if sure == "y":
+                            player_stats, player_inventory, bosses_defeat, enemies_defeat, player_loss, player_win = BastilliaFortuica(player_stats,player_inventory,weaponstats,Weapons,consumables,boss_stats,enemies_defeated,bosses_defeated,chestlootsystem)
                         else:
-                            print("Please input one of the options in ()")
-                    if helpchoice == "DS":
-                        print("The stats that the player has is Strength, which increases your damage output in battle,\n Name, which is used to tell the player what John's full name is,\n Intelligence, which makes you sound smarter when talking to the shop NPC,\n Money, which is used to buy items from village shops,\n Health Points, which is used to tell player their actual health,\n Slots Unlocked, tells the player how many inventory slots they can use at the current moment, \n Max Health, It is the highest amount of health the player can receive in the game but is not what the actual player health is. \n \n The stats of monsters is Strength and Health Points, strength increases damage and Health Points is the total amount of health they actually have\n\n")
-                    elif helpchoice == "CF":
-                        print("\nYou can do a few things when fighting in combat. The way you execute combat functions is by typing the name of the item you want to use, it can either be a \n1) Weapon, which will execute an attack on the enemy or \n2) It can be a consumable which is used to increase health or damage but DOES NOT EXECUTE AN ATTACK against the enemy. \n You should always type the item that you want to use exactly as it is shown when it displays the usable items ex. inventory:'Brisket','Chopsticks' input:Brisket\n\n")
-                    elif helpchoice == "SH":
-                        print("\nShops are very simple to understand, you cannot access them if your inventory is full and you can't buy anything if you have too little money. to buy an item you type the name of the item EXACTLY AS IT IS WRITTEN for the transaction to run smoothly. You then can use your newly obtained item in battle or store it in a chest.\n\n")
-                    elif helpchoice == "P":
-                        print("\nYou have a 10 options of places to go to,\n1) You can go to John's House which allows you to move items in and out of your inventory and see what your health, strength etc. 2)Bastillia Fortuica, This is the final zone of the game and is heavily discouraged to enter until all of the other villages have been explored thorougly. 3)Any other village, These areas must be unlocked by first fighting off 3 monsters and then you can shop, fight a monster for stuff, or leave the village.\n\n")
+                            print("Good Choice")
+                elif choice in village_choices:
+                    if choice == "W":
+                        village_chosen = "Wellville"
+                    elif choice == "C":
+                        village_chosen = "Chemisville"
+                    elif choice == "G":
+                        village_chosen = "Gobapdular"
+                    elif choice == "KR":
+                        village_chosen = "Kraftville"
+                    elif choice == "B":
+                        village_chosen = "Bovisad"
+                    elif choice == "KG":
+                        village_chosen = "Kingdomsville"
+                    elif choice == "E":
+                        village_chosen = "Escargot"
+                    elif choice == "L":
+                        village_chosen = "Litteratious"
                     else:
-                        print("A error occurred in help menu")
-            else:
-                print("Invalid input please try again")
-                continue
-            if player_loss == True:
-                print("You Lose")
-                game_time = "Did not finish"
+                        print("Village Error ocurred")
+                    player_stats, player_inventory, village_shops, enemies_defeated, player_loss,freed_villages = DefaultVillage(freed_villages,village_shops,village_chosen,player_inventory,player_stats,weaponstats,Weapons,consumables,enemies_defeated,bosses_defeated,chestlootsystem,enemies,enemies_stats)
+                elif choice == "H":
+                        print("\n \nHelp Menu consists of defining stats (DS), combat functions (CF), Shopping (SH), Places (P)")
+                        goodanswer = False
+                        while not goodanswer:
+                            helpchoice = input("Enter Choice here: ").strip().upper()
+                            if helpchoice == "DS" or helpchoice == "CF" or helpchoice == "SH" or helpchoice == "P":
+                                goodanswer = True
+                            else:
+                                print("Please input one of the options in ()")
+                        if helpchoice == "DS":
+                            print("The stats that the player has is Strength, which increases your damage output in battle,\n Name, which is used to tell the player what John's full name is,\n Intelligence, which makes you sound smarter when talking to the shop NPC,\n Money, which is used to buy items from village shops,\n Health Points, which is used to tell player their actual health,\n Slots Unlocked, tells the player how many inventory slots they can use at the current moment, \n Max Health, It is the highest amount of health the player can receive in the game but is not what the actual player health is. \n \n The stats of monsters is Strength and Health Points, strength increases damage and Health Points is the total amount of health they actually have\n\n")
+                        elif helpchoice == "CF":
+                            print("\nYou can do a few things when fighting in combat. The way you execute combat functions is by typing the name of the item you want to use, it can either be a \n1) Weapon, which will execute an attack on the enemy or \n2) It can be a consumable which is used to increase health or damage but DOES NOT EXECUTE AN ATTACK against the enemy. \n You should always type the item that you want to use exactly as it is shown when it displays the usable items ex. inventory:'Brisket','Chopsticks' input:Brisket\n\n")
+                        elif helpchoice == "SH":
+                            print("\nShops are very simple to understand, you cannot access them if your inventory is full and you can't buy anything if you have too little money. to buy an item you type the name of the item EXACTLY AS IT IS WRITTEN for the transaction to run smoothly. You then can use your newly obtained item in battle or store it in a chest.\n\n")
+                        elif helpchoice == "P":
+                            print("\nYou have a 10 options of places to go to,\n1) You can go to John's House which allows you to move items in and out of your inventory and see what your health, strength etc. 2)Bastillia Fortuica, This is the final zone of the game and is heavily discouraged to enter until all of the other villages have been explored thorougly. 3)Any other village, These areas must be unlocked by first fighting off 3 monsters and then you can shop, fight a monster for stuff, or leave the village.\n\n")
+                        else:
+                            print("A error occurred in help menu")
+                else:
+                    print("Invalid input please try again")
+                    continue
+                if player_loss == True:
+                    print("You Lose")
+                    game_time = "Did not finish"
+                    break
+                if player_win == True:
+                    print("GG")
+                    end_time = time.time()
+                    print(end_time)
+                    break
+            #scoreboard
+            if isinstance(end_time,float):
+                game_time = end_time - start_time
+            scoreboard[name]={"Time":str(game_time)+" seconds","Enemies defeated":enemies_defeated,"Intelligence":player_stats["Intelligence"]}
+            print("Scoreboard:")
+            counter = 0
+            for x in scoreboard:
+                print(f"{scoreboard.keys()}{scoreboard[x]}")
+                counter += 1
+            play_again = input(f"Would you like to play again? y/n \n Type here: ").strip().lower()
+            if play_again == "n":
+                print("Thank you for playing")
                 break
-            if player_win == True:
-                print("GG")
-                end_time = time.time()
-                print(end_time)
-                break
-        #scoreboard
-        if isinstance(end_time,float):
-            game_time = end_time - start_time
-        scoreboard[name]={"Time":str(game_time)+" seconds","Enemies defeated":enemies_defeated,"Intelligence":player_stats["Intelligence"]}
-        print("Scoreboard:")
-        counter = 0
-        for x in scoreboard:
-            print(f"{scoreboard.keys()}{scoreboard[x]}")
-            counter += 1
-        play_again = input(f"Would you like to play again? y/n \n Type here: ").strip().lower()
-        if play_again == "n":
-            print("Thank you for playing")
+        play_again = input("Would you like to exit the game? (don't exit unless dev because I want to see scores from other people) y/n \n Type here: ").strip().lower()
+        if play_again == "y":
             break
-    play_again = input("Would you like to exit the game? (don't exit unless dev because I want to see scores from other people) y/n \n Type here: ").strip().lower()
-    if play_again == "y":
-        break
 
 
 
-    #End 
+        #End 

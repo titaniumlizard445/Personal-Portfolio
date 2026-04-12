@@ -2,6 +2,7 @@
 
 import customtkinter as ctk
 
+
 class Foreground:
     def __init__(self, root):
         self.root = root
@@ -53,8 +54,12 @@ class Description:
             font=ctk.CTkFont(family="Arial",size=18,weight="normal")
         )
     
-    def show(self):
-        self.descript.pack(pady=20)
+    def show(self,position=None):
+        if position == None:
+            self.descript.pack(pady=20)
+        else:
+            self.descript.place(x=position[0],y=position[1])
+            self.descript.propagate(False)
 
 
 class Button:
