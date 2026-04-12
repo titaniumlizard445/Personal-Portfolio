@@ -1,0 +1,730 @@
+{
+    "Mr.Joe": {
+        "Abilities": {
+            "Sentry shot": {
+                "Damage": 30,
+                "Description": "Build a sentry to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Wrench"
+            },
+            "Acidic Concauction": {
+                "Damage": "40",
+                "Description": "Uses Beaker: Throw a Beaker of HCl on opponnents to Use the effects of a strong acid to dissociate their electrolytes and deal 40 damage before defense is applied.",
+                "ItemUsed": "Beaker"
+            },
+            "NaCN": {
+                "Damage": "9999999999",
+                "Description": "Make your opponnent drink NaCN",
+                "ItemUsed": "Beaker"
+            }
+        },
+        "Inventory": [
+            "Metal"
+        ],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Wrench",
+            "Basic",
+            "Beaker"
+        ],
+        "Class": "Engineer",
+        "Level": 2,
+        "Stats": {
+            "Defense": 6.25,
+            "Strength": 10.9375,
+            "Health": 156.25,
+            "Intelligence": 112.5
+        }
+    },
+    "Pakistan": {
+        "Abilities": {
+            "Sword Stike": {
+                "Damage": 20,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Sword"
+            },
+            "Make Awkward Joke": {
+                "Damage": "10",
+                "Description": "Use High Comedic skills to deal 10 damage to opponnents",
+                "ItemUsed": "Basic"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Sword",
+            "Basic"
+        ],
+        "Class": "Well Rounded",
+        "Level": 0,
+        "Stats": {
+            "Defense": 7,
+            "Strength": 5.0,
+            "Health": 120,
+            "Intelligence": 10
+        }
+    },
+    "Parker": {
+        "Abilities": {
+            "Icicle Strike": {
+                "Damage": 15,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Staff"
+            },
+            "Death From Above": {
+                "Damage": "999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "Description": "Use The Bane of Exact Existence to vanquish any enemy in its path, damage: too much, love to see it",
+                "ItemUsed": "The Bane of Exact Existance"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Staff",
+            "Basic",
+            "The Bane of Exact Existance"
+        ],
+        "Class": "Mage",
+        "Level": 3,
+        "Stats": {
+            "Defense": 85.78125,
+            "Strength": 5.859375,
+            "Health": 234.375,
+            "Intelligence": 101.25
+        }
+    },
+    "Nicholas Cage": {
+        "Abilities": {
+            "Arrow Shot": {
+                "Damage": 15,
+                "Description": "Use your Bow to deal 15 damage to the enemy before defense is counted",
+                "ItemUsed": "Bow"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Bow",
+            "Basic"
+        ],
+        "Class": "Archer",
+        "Level": 0,
+        "Stats": {
+            "Defense": 7,
+            "Strength": 4.0,
+            "Health": 100,
+            "Intelligence": 20
+        }
+    },
+    "Gimli": {
+        "Abilities": {
+            "Claymore Stike": {
+                "Damage": 30,
+                "Description": "Use your Clyamore to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Clamore"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Clarmore",
+            "Basic"
+        ],
+        "Class": "Warrior",
+        "Level": 0,
+        "Stats": {
+            "Defense": 10,
+            "Strength": 7.0,
+            "Health": 150,
+            "Intelligence": 5
+        }
+    },
+    "Gandalf": {
+        "Abilities": {
+            "Icicle Strike": {
+                "Damage": 15,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Staff"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Staff",
+            "Basic"
+        ],
+        "Class": "Mage",
+        "Level": 0,
+        "Stats": {
+            "Defense": 3,
+            "Strength": 3.0,
+            "Health": 120,
+            "Intelligence": 30
+        }
+    },
+    "Terry Tyler": {
+        "Abilities": {
+            "Sword Stike": {
+                "Damage": 20,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Sword"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Sword",
+            "Basic"
+        ],
+        "Class": "Well Rounded",
+        "Level": 2,
+        "Stats": {
+            "Defense": 10.9375,
+            "Strength": 7.8125,
+            "Health": 187.5,
+            "Intelligence": 22.5
+        }
+    },
+    "Kelsey Newman": {
+        "Abilities": {
+            "Sword Stike": {
+                "Damage": 20,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Sword"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": 3.0,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": 2.0
+        },
+        "Weapons": [
+            "Sword",
+            "Basic"
+        ],
+        "Class": "Well Rounded",
+        "Level": 1,
+        "Stats": {
+            "Defense": 13.75,
+            "Strength": 6.25,
+            "Health": 150.0,
+            "Intelligence": 15.0
+        }
+    },
+    "Amy Callahan": {
+        "Abilities": {
+            "Arrow Shot": {
+                "Damage": 15,
+                "Description": "Use your Bow to deal 15 damage to the enemy before defense is counted",
+                "ItemUsed": "Bow"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": 3.0,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Bow",
+            "Basic"
+        ],
+        "Class": "Archer",
+        "Level": 1,
+        "Stats": {
+            "Defense": 11.75,
+            "Strength": 5.0,
+            "Health": 125.0,
+            "Intelligence": 30.0
+        }
+    },
+    "Michael Combs": {
+        "Abilities": {
+            "Icicle Strike": {
+                "Damage": 15,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Staff"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": 4.0,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Staff",
+            "Basic"
+        ],
+        "Class": "Mage",
+        "Level": 0,
+        "Stats": {
+            "Defense": 7.0,
+            "Strength": 3.0,
+            "Health": 120,
+            "Intelligence": 30
+        }
+    },
+    "Melissa Savage": {
+        "Abilities": {
+            "Arrow Shot": {
+                "Damage": 15,
+                "Description": "Use your Bow to deal 15 damage to the enemy before defense is counted",
+                "ItemUsed": "Bow"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": 2.0,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": 3.0
+        },
+        "Weapons": [
+            "Bow",
+            "Basic"
+        ],
+        "Class": "Archer",
+        "Level": 2,
+        "Stats": {
+            "Defense": 15.9375,
+            "Strength": 6.25,
+            "Health": 156.25,
+            "Intelligence": 45.0
+        }
+    },
+    "Wanda Jones": {
+        "Abilities": {
+            "Sentry shot": {
+                "Damage": 30,
+                "Description": "Build a sentry to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Wrench"
+            }
+        },
+        "Inventory": [
+            "Metal"
+        ],
+        "Armor": {
+            "Helmet": 3.0,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": 3.0
+        },
+        "Weapons": [
+            "Wrench",
+            "Basic"
+        ],
+        "Class": "Engineer",
+        "Level": 1,
+        "Stats": {
+            "Defense": 11.0,
+            "Strength": 8.75,
+            "Health": 125.0,
+            "Intelligence": 75.0
+        }
+    },
+    "Ashley Todd": {
+        "Abilities": {
+            "Icicle Strike": {
+                "Damage": 15,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Staff"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": 3.0,
+            "Leggings": null,
+            "Boots": 5.0
+        },
+        "Weapons": [
+            "Staff",
+            "Basic"
+        ],
+        "Class": "Mage",
+        "Level": 0,
+        "Stats": {
+            "Defense": 11.0,
+            "Strength": 3.0,
+            "Health": 120,
+            "Intelligence": 30
+        }
+    },
+    "Andrea Roberts": {
+        "Abilities": {
+            "Claymore Stike": {
+                "Damage": 30,
+                "Description": "Use your Claymore to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Clamore"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Claymore",
+            "Basic"
+        ],
+        "Class": "Warrior",
+        "Level": 4,
+        "Stats": {
+            "Defense": 24.4140625,
+            "Strength": 17.08984375,
+            "Health": 366.2109375,
+            "Intelligence": 25.3125
+        }
+    },
+    "Kristen Wilson": {
+        "Abilities": {
+            "Icicle Strike": {
+                "Damage": 15,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Staff"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": 1.0,
+            "Boots": null
+        },
+        "Weapons": [
+            "Staff",
+            "Basic"
+        ],
+        "Class": "Mage",
+        "Level": 1,
+        "Stats": {
+            "Defense": 4.75,
+            "Strength": 3.75,
+            "Health": 150.0,
+            "Intelligence": 45.0
+        }
+    },
+    "Terri Rice": {
+        "Abilities": {
+            "Sword Stike": {
+                "Damage": 20,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Sword"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Sword",
+            "Basic"
+        ],
+        "Class": "Well Rounded",
+        "Level": 2,
+        "Stats": {
+            "Defense": 10.9375,
+            "Strength": 7.8125,
+            "Health": 187.5,
+            "Intelligence": 22.5
+        }
+    },
+    "Wendy Green": {
+        "Abilities": {
+            "Claymore Stike": {
+                "Damage": 30,
+                "Description": "Use your Claymore to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Clamore"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": 1.0,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Claymore",
+            "Basic"
+        ],
+        "Class": "Warrior",
+        "Level": 0,
+        "Stats": {
+            "Defense": 11.0,
+            "Strength": 7.0,
+            "Health": 150,
+            "Intelligence": 5
+        }
+    },
+    "Andrew Barnes": {
+        "Abilities": {
+            "Claymore Stike": {
+                "Damage": 30,
+                "Description": "Use your Claymore to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Clamore"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": 3.0,
+            "Leggings": null,
+            "Boots": 3.0
+        },
+        "Weapons": [
+            "Claymore",
+            "Basic"
+        ],
+        "Class": "Warrior",
+        "Level": 2,
+        "Stats": {
+            "Defense": 21.625,
+            "Strength": 10.9375,
+            "Health": 234.375,
+            "Intelligence": 11.25
+        }
+    },
+    "Benjamin Taylor": {
+        "Abilities": {
+            "Arrow Shot": {
+                "Damage": 15,
+                "Description": "Use your Bow to deal 15 damage to the enemy before defense is counted",
+                "ItemUsed": "Bow"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": 2.0,
+            "Leggings": null,
+            "Boots": 1.0
+        },
+        "Weapons": [
+            "Bow",
+            "Basic"
+        ],
+        "Class": "Archer",
+        "Level": 0,
+        "Stats": {
+            "Defense": 10.0,
+            "Strength": 4.0,
+            "Health": 100,
+            "Intelligence": 20
+        }
+    },
+    "Michael Lee": {
+        "Abilities": {
+            "Sword Stike": {
+                "Damage": 20,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Sword"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": 4.0
+        },
+        "Weapons": [
+            "Sword",
+            "Basic"
+        ],
+        "Class": "Well Rounded",
+        "Level": 4,
+        "Stats": {
+            "Defense": 21.08984375,
+            "Strength": 12.20703125,
+            "Health": 292.96875,
+            "Intelligence": 50.625
+        }
+    },
+    "Dennis Lopez": {
+        "Abilities": {
+            "Sentry shot": {
+                "Damage": 30,
+                "Description": "Build a sentry to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Wrench"
+            }
+        },
+        "Inventory": [
+            "Metal"
+        ],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": 3.0,
+            "Boots": null
+        },
+        "Weapons": [
+            "Wrench",
+            "Basic"
+        ],
+        "Class": "Engineer",
+        "Level": 4,
+        "Stats": {
+            "Defense": 12.765625,
+            "Strength": 17.08984375,
+            "Health": 244.140625,
+            "Intelligence": 253.125
+        }
+    },
+    "William Lopez": {
+        "Abilities": {
+            "Claymore Stike": {
+                "Damage": 30,
+                "Description": "Use your Claymore to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Clamore"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": 4.0
+        },
+        "Weapons": [
+            "Claymore",
+            "Basic"
+        ],
+        "Class": "Warrior",
+        "Level": 4,
+        "Stats": {
+            "Defense": 28.4140625,
+            "Strength": 17.08984375,
+            "Health": 366.2109375,
+            "Intelligence": 25.3125
+        }
+    },
+    "Joseph Roach": {
+        "Abilities": {
+            "Sword Stike": {
+                "Damage": 20,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Sword"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Sword",
+            "Basic"
+        ],
+        "Class": "Well Rounded",
+        "Level": 3,
+        "Stats": {
+            "Defense": 13.671875,
+            "Strength": 9.765625,
+            "Health": 234.375,
+            "Intelligence": 33.75
+        }
+    },
+    "Eric Cunningham": {
+        "Abilities": {
+            "Icicle Strike": {
+                "Damage": 15,
+                "Description": "Use your sword to deal 20 damage to the other enemy before defense is counted",
+                "ItemUsed": "Staff"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": null,
+            "Leggings": null,
+            "Boots": null
+        },
+        "Weapons": [
+            "Staff",
+            "Basic"
+        ],
+        "Class": "Mage",
+        "Level": 0,
+        "Stats": {
+            "Defense": 3,
+            "Strength": 3.0,
+            "Health": 120,
+            "Intelligence": 30
+        }
+    },
+    "Laura Dawson": {
+        "Abilities": {
+            "Claymore Stike": {
+                "Damage": 30,
+                "Description": "Use your Claymore to deal 30 damage to the other enemy before defense is counted",
+                "ItemUsed": "Clamore"
+            }
+        },
+        "Inventory": [],
+        "Armor": {
+            "Helmet": null,
+            "ChestPlate": 5.0,
+            "Leggings": 3.0,
+            "Boots": null
+        },
+        "Weapons": [
+            "Claymore",
+            "Basic"
+        ],
+        "Class": "Warrior",
+        "Level": 4,
+        "Stats": {
+            "Defense": 32.4140625,
+            "Strength": 17.08984375,
+            "Health": 366.2109375,
+            "Intelligence": 25.3125
+        }
+    }
+}
