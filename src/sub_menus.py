@@ -22,6 +22,6 @@ def default_UI(project_name,description,program):
     exit.show()
 
     run_button = Button(fg.foreground,"Run",program)
-    run_button.show(1000,400)
+    run_button.show(600,800)
 
     root.mainloop()
