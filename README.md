@@ -14,12 +14,12 @@ Contains a variety of programming projects that have been created using python
 - Video Game Character manager
 - Text-Based Adventure Game
 - Turtle Race Game
-
-## Libraries to intall
+***
+## Libraries to install
 - CustomTkinter
 - Faker
 - Matplotlib
 - Pandas
-
+***
 ## Contributors
 - titaniumlizard445
