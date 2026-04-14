@@ -1,6 +1,5 @@
 from .files.file_management import *
 import pandas as panda
-import matplotlib as plotting
 import matplotlib.pyplot as plt
 import math
 from .sub_ui import *
