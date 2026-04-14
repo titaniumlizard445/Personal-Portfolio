@@ -1,5 +1,5 @@
 # Personal-Portfolio
-Contains a variety of programming projects that have been created using python
+Contains a variety of programming projects that have been created using python. It uses customtkinter GUI to display project information but 3 of the actual programs run in the terminal and require inputs there. Once a program is done running, You may proceed to check out some other programs.
 ***
 ## How to Use
 1. Click on the src folder
@@ -20,6 +20,14 @@ Contains a variety of programming projects that have been created using python
 - Faker
 - Matplotlib
 - Pandas
+***
+## How to Install a Python library
+1. In Visual Studio Code go to the terminal menu on the bar on the top of the window (it may become ... if the window is too small)
+2. Click the "New Terminal" button
+3. In the New opening in the window, click it (You should be able to type into it)
+4. Type The command: pip install >Libraryname< (For example: pip install Faker)
+5. Watch as the library is downloaded
+- The Code will Not work unless all the needed libraries are installed
 ***
 ## Contributors
 - titaniumlizard445
