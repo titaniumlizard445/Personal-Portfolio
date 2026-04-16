@@ -1,5 +1,5 @@
 # Personal-Portfolio
-Contains a variety of programming projects that have been created using python. It uses customtkinter GUI to display project information but 3 of the actual programs run in the terminal and require inputs there. Once a program is done running, You may proceed to check out some other programs.
+Contains a variety of programming projects that have been created using python. It uses customtkinter GUI to display project information but 3 of the actual programs run in the terminal and require inputs there. Once a program is done running, You may proceed to check out some other programs. Notice: CustomTkinter has issues with python versions 3.12+, if there is an error along the line of "ModuleNotFoundError: distutils does not exist" try downgrading below 3.12 or in the terminal, type the command, pip install customtkinter --upgrade.
 ***
 ## How to Use
 1. Click on the src folder
